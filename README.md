@@ -141,57 +141,59 @@ The exercise demonstrated that wordlist coverage and ordering both influence pas
 
 The following screenshots provide visual evidence of the practical activities and results achieved during the Week 3 assessment.
 
-**Hash Extraction Troubleshooting:** Initial Perl/Python-related issue encountered during PDF hash extraction.
+1. **Hash Extraction Troubleshooting:** Initial Perl/Python-related issue encountered during PDF hash extraction.
 
 <img width="1431" height="549" alt="perl, python error pdf1" src="https://github.com/user-attachments/assets/2790b17b-e631-4451-9a0a-d1d918d80c7e" />
 
 
-**PDF 1 Successful Password Cracking:** John the Ripper successfully cracked the password for PDF 1
+2. **PDF 1 Successful Password Cracking:** John the Ripper successfully cracked the password for PDF 1
 
 <img width="1433" height="634" alt="PDF1 password found zoomed no perl command" src="https://github.com/user-attachments/assets/622c3559-bcda-424d-a863-348dee8ea7e3" />
 
 
-**PDF 2 Hash Extraction and Successful Password Cracking:** Resolution of the hash-overwriting issue, followed by successful password cracking
+3. **PDF 2 Hash Extraction and Successful Password Cracking:** Resolution of the hash-overwriting issue, followed by successful password cracking
 
 <img width="1439" height="780" alt="PDF2 CRACKED overwrote hash2 " src="https://github.com/user-attachments/assets/e5535b0f-35a6-4f1d-a8b4-e53d80093ce6" />
 
 
-**PDF 3 Successful Password Cracking:** John the Ripper successfully cracked the password for PDF 3
+4. **PDF 3 Successful Password Cracking:** John the Ripper successfully cracked the password for PDF 3
 
 <img width="1431" height="629" alt="USE PDF3 password found zoomed" src="https://github.com/user-attachments/assets/dedc64e7-790b-49c9-9e13-8d3c0035839d" />
 
 
-**PDF 1 Password Verification:** The cracked password successfully unlocked PDF 1.
+5. **PDF 1 Password Verification:** The cracked password successfully unlocked PDF 1.
 
 <img width="698" height="699" alt="PDF1 cracked" src="https://github.com/user-attachments/assets/32e7d477-267a-45f1-9705-25225c774839" />
 
 
-**PDF 2 Password Verification:** The cracked password successfully unlocked PDF 2.
+6. **PDF 2 Password Verification:** The cracked password successfully unlocked PDF 2.
 
 <img width="694" height="705" alt="PDF2 cracked" src="https://github.com/user-attachments/assets/22f7913a-b071-46cc-9fd9-3c22e592de42" />
 
 
-**PDF 3 Password Verification:** The cracked password successfully unlocked PDF 3.
+7. **PDF 3 Password Verification:** The cracked password successfully unlocked PDF 3.
 
 <img width="694" height="705" alt="PDF3 cracked" src="https://github.com/user-attachments/assets/98e0820b-3cfb-4b4f-81fa-492699f2f940" />
 
 
-**Built-in Wordlist Test:** The built-in wordlist failed to crack the password for  PDF1
+8. **Built-in Wordlist Test:** The built-in wordlist failed to crack the password for  PDF1
 
 <img width="1433" height="812" alt="Builtin first fsilure" src="https://github.com/user-attachments/assets/82644972-b471-4c6a-bf79-58c72c906b0f" />
 
 
-**Default Wordlist Test PDF 1:** The John the Ripper default wordlist successfully cracked PDF 1's password.
+9. **Default Wordlist Test PDF 1:** The John the Ripper default wordlist successfully cracked PDF 1's password.
 
 
 <img width="1436" height="811" alt="pdf1 password found tools" src="https://github.com/user-attachments/assets/75a954c3-e19b-406f-bd02-ef315c57ad50" />
 
 
-**Default Wordlist Test PDF 2:** The John the Ripper default wordlist successfully cracked PDF 2's password.
+10. **Default Wordlist Test PDF 2:** The John the Ripper default wordlist successfully cracked PDF 2's password.
 
 <img width="1440" height="811" alt="pdf2 password found tool" src="https://github.com/user-attachments/assets/7f9da7e4-cd82-4994-8e3d-4435a3f57de5" />
 
-**Default Wordlist Test PDF 3:** The John the Ripper default wordlist successfully cracked PDF 3's password.
+
+
+11. **Default Wordlist Test PDF 3:** The John the Ripper default wordlist successfully cracked PDF 3's password.
 
 <img width="1440" height="811" alt="pdf3 password found tool" src="https://github.com/user-attachments/assets/94580a6f-5724-41fc-a09f-c333d34fd52a" />
 
