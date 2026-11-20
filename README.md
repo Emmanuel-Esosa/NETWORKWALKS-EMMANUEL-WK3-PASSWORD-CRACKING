@@ -72,7 +72,7 @@ The main objectives of the assessment were to:
 
 John the Ripper comes pre-installed on Kali Linux, so this module was carried out directly in the terminal. For each of the three provided PDF files, a password hash was first extracted using pdf2john.pl and saved to its own hash file. John the Ripper was then run against each hash file in turn.
 
-John The Ripper tried its own built-in guessing rules on each file first, none of these matched, then it automatically moved on to its default wordlist and cracked all three of the Locked pdfs.
+John the Ripper first ran its single-crack mode. When no match was found, it proceeded to its default wordlist and successfully recovered the passwords for all three PDF files.
 
 ### 6.2 W3-PM2 – Password Cracking with NetworkWalks Tools
 
@@ -84,12 +84,6 @@ The built-in 100-password list was not enough to crack the first file, so a larg
 
 ## 7. RESULTS AND OBSERVATIONS
 
-| File | Password Recovered |
-| --- | --- |
-| My Locked PDF1.pdf | good-luck |
-| My Locked PDF2.pdf | password1 |
-| My Locked PDF3.pdf | 1qaz2wsx |
-
 All three results were confirmed independently by both John the Ripper and the NetworkWalks Password Cracker, which gives good confidence in the findings.
 
 Key observations:
@@ -100,13 +94,13 @@ Key observations:
 
 I also compared three wordlists of different sizes against all three files, to see how wordlist choice affects cracking: NetworkWalks' built-in 100-password list, a 221-word curated list (fasttrack.txt), and John the Ripper's own 3,556-word default list. The position at which each wordlist found the correct password (counted as word number / total words in that list) was:
 
-| File | Password | JTR list (3,556 words) | fasttrack.txt (221 words) | Built-in list (100 words) |
-| --- | --- | --- | --- | --- |
-| My Locked PDF1.pdf | good-luck | Found at 3,456 / 3,556 | Not found | Not found |
-| My Locked PDF2.pdf | password1 | Found at 15 / 3,556 | Found at 81 / 221 | Found at 91 / 100 |
-| My Locked PDF3.pdf | 1qaz2wsx | Found at 2,078 / 3,556 | Found at 212 / 221 | Found at 35 / 100 |
+| File | JTR list (3,556 words) | fasttrack.txt (221 words) | Built-in list (100 words) |
+| --- | --- | --- | --- |
+| My Locked PDF1.pdf | Found at 3,456 / 3,556 | Not found | Not found |
+| My Locked PDF2.pdf | Found at 15 / 3,556 | Found at 81 / 221 | Found at 91 / 100 |
+| My Locked PDF3.pdf | Found at 2,078 / 3,556 | Found at 212 / 221 | Found at 35 / 100 |
 
-The larger JTR list was the only one that contained every password and so was the only list to crack all three files; the two smaller lists both missed PDF1's password entirely. Where a password did appear in more than one list, its position was not consistently near the start or end of either list: password1 was found early in the large list (position 15) but later in the two smaller ones, while 1qaz2wsx was found in the second half of the large list but still faster overall through fasttrack.txt, since fasttrack.txt is so much shorter to begin with. The main lesson is that a wordlist's coverage (whether it contains the target password at all) matters more than its size or ordering; a smaller list only wins on speed when it happens to contain the password, and offers no guarantee otherwise.
+The larger JTR list was the only one that contained every password and so was the only list to crack all three files; the two smaller lists both missed PDF1's password entirely. Where a password did appear in more than one list, its position was not consistently near the start or end of either list: First locked pdf password was found early in the large list (position 15) but later in the two smaller ones, while third locked pdf password was found in the second half of the large list but still faster overall through fasttrack.txt, since fasttrack.txt is so much shorter to begin with. The main lesson is that a wordlist's coverage (whether it contains the target password at all) matters more than its size or ordering; a smaller list only wins on speed when it happens to contain the password, and offers no guarantee otherwise.
 
 A few practical issues came up and were resolved along the way: the hash-extraction script needed the Perl interpreter rather than Python, since it is a .pl script; and a hash was briefly saved under the wrong filename, which was caught immediately and corrected.
 
@@ -126,18 +120,22 @@ Weak and commonly used passwords can be recovered quickly, as shown by all three
 
 ## 9. RECOMMENDATIONS
 
-1. Avoid dictionary-word and keyboard-pattern passwords such as password1 or 1qaz2wsx.
-2. Use long, random, unique passwords, ideally generated and stored with a password manager.
-3. Enable multi-factor authentication wherever possible.
-4. Treat a password-protected file as weakly protected if its password is short or common, regardless of the encryption used.
-5. Test password strength proactively, using tools like John the Ripper, as part of authorized security reviews.
-6. Perform password-cracking exercises only on files and systems for which proper authorization has been given.
+Based on the findings and potential impacts identified during the password security assessment, the following recommendations are proposed:
+
+1. **Enforce strong password policies:** Encourage the use of long, unique passwords that are not easily found in common wordlists or dictionary databases.
+
+2. **Discourage predictable passwords:** Users should avoid common words, personal information and predictable keyboard patterns when creating passwords.
+
+3. **Use appropriate file encryption:** Sensitive PDF documents should be protected using strong encryption and robust passwords to reduce the risk of unauthorised access.
+
+4. **Implement Multi-Factor Authentication (MFA):** Where password-protected documents are accessed through user accounts or online platforms, MFA should be enabled to provide an additional layer of protection.
+
+5. **Promote password management practices:** Encourage the use of reputable password managers to generate and securely store unique passwords.
 
 ---
 
 ## 10. CONCLUSION
-
-Using John the Ripper and NetworkWalks' own Hash Calculator and Password Cracker, I extracted and recovered the passwords of three provided PDF files: good-luck, password1, and 1qaz2wsx. Both methods, run independently, agreed on all three results. The exercise also showed that wordlist quality matters as much as size, since a smaller curated list cracked a common password faster than a larger generic one. Overall, the assessment strengthened my understanding of password security, practical cracking tools, and why weak or common passwords remain one of the easiest ways into a system.
+The exercise demonstrated that wordlist coverage and ordering both influence password recovery. A smaller curated list can recover a password in fewer attempts when that password appears earlier in the list, while a larger list may provide broader coverage.
 
 ---
 
