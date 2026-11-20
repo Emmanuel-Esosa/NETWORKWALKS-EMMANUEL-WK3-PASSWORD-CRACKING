@@ -161,17 +161,17 @@ The following screenshots provide visual evidence of the practical activities an
 <img width="1431" height="629" alt="USE PDF3 password found zoomed" src="https://github.com/user-attachments/assets/dedc64e7-790b-49c9-9e13-8d3c0035839d" />
 
 
-### Evidence 5 
+**PDF 1 Password Verification:** The cracked password successfully unlocked PDF 1.
 
 <img width="698" height="699" alt="PDF1 cracked" src="https://github.com/user-attachments/assets/32e7d477-267a-45f1-9705-25225c774839" />
 
 
-### Evidence 6 
+**PDF 2 Password Verification:** The cracked password successfully unlocked PDF 2.
 
 <img width="694" height="705" alt="PDF2 cracked" src="https://github.com/user-attachments/assets/22f7913a-b071-46cc-9fd9-3c22e592de42" />
 
 
-### Evidence 7 
+**PDF 3 Password Verification:** The cracked password successfully unlocked PDF 3.
 
 <img width="694" height="705" alt="PDF3 cracked" src="https://github.com/user-attachments/assets/98e0820b-3cfb-4b4f-81fa-492699f2f940" />
 
