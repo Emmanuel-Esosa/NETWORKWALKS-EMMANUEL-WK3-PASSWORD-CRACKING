@@ -108,13 +108,11 @@ A few practical issues came up and were resolved along the way: the hash-extract
 
 ## 8. RISK ANALYSIS / IMPACT
 
-Weak and commonly used passwords can be recovered quickly, as shown by all three files in this exercise. The practical demonstrated why organizations should:
+The exercise demonstrated that password-protected documents secured with weak or commonly used passwords may be vulnerable to password recovery attempts using wordlists.
 
-- Enforce strong password policies, discouraging dictionary words and keyboard patterns.
-- Avoid relying on password-protection alone for sensitive files, since a weak password offers little real protection even with strong encryption.
-- Implement multi-factor authentication, so a cracked or leaked password is not enough on its own.
-- Conduct password security testing, such as the exercises in this report, only with proper authorization.
-- Review and update wordlists and password policies periodically, since cracking tools and lists continue to improve.
+In an organisational environment, this could expose confidential information contained in protected documents, potentially affecting data confidentiality and privacy. It also shows that password protection alone may not provide sufficient security when weak passwords are used.
+
+The potential impact depends on the sensitivity of the documents and the information they contain. Although this exercise was conducted using training files, the findings highlight the importance of applying strong password security practices when protecting organisational information.
 
 ---
 
@@ -143,22 +141,22 @@ The exercise demonstrated that wordlist coverage and ordering both influence pas
 
 The following screenshots provide visual evidence of the practical activities and results achieved during the Week 3 assessment.
 
-### Evidence 1 
+**Hash Extraction Troubleshooting:** Initial Perl/Python-related issue encountered during PDF hash extraction.
 
 <img width="1431" height="549" alt="perl, python error pdf1" src="https://github.com/user-attachments/assets/2790b17b-e631-4451-9a0a-d1d918d80c7e" />
 
 
-### Evidence 2 
+**PDF 1 Successful Password Cracking:** John the Ripper successfully cracked the password for PDF 1
 
 <img width="1433" height="634" alt="PDF1 password found zoomed no perl command" src="https://github.com/user-attachments/assets/622c3559-bcda-424d-a863-348dee8ea7e3" />
 
 
-### Evidence 3 
+**PDF 2 Hash Extraction and Successful Password Cracking:** Resolution of the hash-overwriting issue, followed by successful password cracking
 
 <img width="1439" height="780" alt="PDF2 CRACKED overwrote hash2 " src="https://github.com/user-attachments/assets/e5535b0f-35a6-4f1d-a8b4-e53d80093ce6" />
 
 
-### Evidence 4 
+**PDF 3 Successful Password Cracking:** John the Ripper successfully cracked the password for PDF 3
 
 <img width="1431" height="629" alt="USE PDF3 password found zoomed" src="https://github.com/user-attachments/assets/dedc64e7-790b-49c9-9e13-8d3c0035839d" />
 
