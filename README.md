@@ -11,7 +11,6 @@ Week 3 Cybersecurity Internship Project- Password cracking with John the Ripper(
 | Assessment | Week 3 Practical Assessment |
 | Main Modules | W3-PM1 and W3-PM2 |
 | Operating System | Kali Linux |
-| Repository | NETWORKWALKS-WK3-PASSWORD-CRACKING |
 
 ---
 
@@ -73,7 +72,7 @@ The main objectives of the assessment were to:
 
 John the Ripper comes pre-installed on Kali Linux, so this module was carried out directly in the terminal. For each of the three provided PDF files, a password hash was first extracted using pdf2john.pl and saved to its own hash file. John the Ripper was then run against each hash file in turn.
 
-The first file was cracked almost immediately once John fell back to its own default wordlist. The same process was repeated for the second and third files, and each result was confirmed using John's built-in show option.
+John The Ripper tried its own built-in guessing rules on each file first, none of these matched, then it automatically moved on to its default wordlist and cracked all three of the Locked pdfs.
 
 ### 6.2 W3-PM2 – Password Cracking with NetworkWalks Tools
 
