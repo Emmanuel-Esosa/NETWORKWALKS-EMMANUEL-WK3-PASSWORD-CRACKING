@@ -176,21 +176,22 @@ The following screenshots provide visual evidence of the practical activities an
 <img width="694" height="705" alt="PDF3 cracked" src="https://github.com/user-attachments/assets/98e0820b-3cfb-4b4f-81fa-492699f2f940" />
 
 
-### Evidence 8
+**Built-in Wordlist Test:** The built-in wordlist failed to crack the password for  PDF1
 
 <img width="1433" height="812" alt="Builtin first fsilure" src="https://github.com/user-attachments/assets/82644972-b471-4c6a-bf79-58c72c906b0f" />
 
 
-### Evidence 9
+**Default Wordlist Test PDF 1:** The John the Ripper default wordlist successfully cracked PDF 1's password.
+
 
 <img width="1436" height="811" alt="pdf1 password found tools" src="https://github.com/user-attachments/assets/75a954c3-e19b-406f-bd02-ef315c57ad50" />
 
 
-### Evidence 10
+**Default Wordlist Test PDF 2:** The John the Ripper default wordlist successfully cracked PDF 2's password.
 
 <img width="1440" height="811" alt="pdf2 password found tool" src="https://github.com/user-attachments/assets/7f9da7e4-cd82-4994-8e3d-4435a3f57de5" />
 
-### Evidence 11
+**Default Wordlist Test PDF 3:** The John the Ripper default wordlist successfully cracked PDF 3's password.
 
 <img width="1440" height="811" alt="pdf3 password found tool" src="https://github.com/user-attachments/assets/94580a6f-5724-41fc-a09f-c333d34fd52a" />
 
